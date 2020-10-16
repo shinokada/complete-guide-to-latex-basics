@@ -1,0 +1,21 @@
+\documentclass[fontsize=12px,paper=a4]{scrlttr2}
+
+% Read KOMA-Script documentation, http://ftp.jaist.ac.jp/pub/CTAN/macros/latex/contrib/koma-script/doc/scrguien.pdf
+
+\setkomavar{fromname}{John Doe}
+\setkomavar{fromaddress}{2-3-4, New York City}
+\setkomavar{signature}{Shinichi}
+\renewcommand{\raggedsignature}{\raggedright}
+% make the signature ragged right
+
+\setkomavar{subject}{New template}
+
+\begin{document}
+\begin{letter}{Name and \\ Adress \\ of \\recipient}
+
+	\opening{Hello}
+	Content here.
+
+	\closing{Kind regards,}
+\end{letter}
+\end{document}

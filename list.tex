@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+
+\title{List}
+\author{John Doe}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+List environment in \LaTeX.
+
+\subsection{Bulleted List}
+
+\begin{itemize}
+	\item One
+	\item Two
+	\item Three
+\end{itemize}
+
+\subsection{Numbered List}
+
+\begin{enumerate}
+	\item One
+	\item Two
+	\item Three
+\end{enumerate}
+
+\subsection{Description}
+
+\begin{description}
+	\item[Name] Your Name
+	\item[Age] Your Age
+	\item[Address] Your Address
+\end{description}
+
+\section{Nested Lists}
+
+\begin{enumerate}
+	\item One
+	\item Two
+	      \begin{itemize}
+		      \item Two-one
+		      \item Two-two
+	      \end{itemize}
+	\item Lists
+	      \begin{itemize}
+		      \item List-one
+		      \item List-two
+		      \item List-three
+	      \end{itemize}
+\end{enumerate}
+
+\section{Conclusion}
+
+\end{document}
+

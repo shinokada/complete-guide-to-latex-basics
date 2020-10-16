@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+
+\title{Tables}
+\author{John Doe}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+Tables, floats and the tabular environment.
+
+\section{Section}
+\subsection{Two columns}
+User these options: c: center, l:left, r:right
+
+\noindent
+Use bigskip for big space
+
+\bigskip
+\begin{tabular}{rl}
+	Name    & Your Name    \\
+	ZIP     & 12345        \\
+	Address & Your Address \\
+	Tel     & 1234-5678    \\
+\end{tabular}
+
+
+\subsection{Three columns}
+User these options: c: center, l:left, r:right
+
+\noindent
+Use smallskip for small space
+
+\smallskip
+
+\begin{tabular}{clr}
+	\textbf{Name} & \textbf{ZIP} & \textbf{State} \\
+	John          & 12345        & AL             \\
+	Sara          & 22222        & AZ             \\
+	Paul          & 12678        & CA             \\
+\end{tabular}
+
+
+\subsection{Outlines using pipes and hline}
+User these options: c: center, l:left, r:right
+
+\noindent
+Use vspace to control the space.
+
+\vspace{0.5cm}
+
+\begin{tabular}{|c|c|}
+	\hline
+	Name    & Your Name    \\
+	\hline
+	ZIP     & 12345        \\
+	\hline
+	Address & Your Address \\
+	\hline
+	Tel     & 1234-5678    \\
+	\hline
+\end{tabular}
+
+\subsection{Double Outlines using pipes and hline}
+% two columns, c: center, l:left, r:right
+\begin{tabular}{||c||c||}
+	\hline \hline
+	Name    & Your Name    \\
+	\hline \hline
+	ZIP     & 12345        \\
+	\hline \hline
+	Address & Your Address \\
+	\hline \hline
+	Tel     & 1234-5678    \\
+	\hline \hline
+\end{tabular}
+\newpage
+\subsection{Floats: Table}
+Preferences: h:here, t:top, b:bottom, p: next page
+\\
+Then set your preferences in [].
+
+\begin{table}[hbtp]
+	\caption{My Table}
+	\begin{center}
+		\begin{tabular}{|c||c|}
+			\hline
+			Name    & Your Name    \\
+			\hline
+			ZIP     & 12345        \\
+			\hline
+			Address & Your Address \\
+			\hline
+			Tel     & 1234-5678    \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{tab:my-table}
+\end{table}
+
+\section{Reference}
+
+You can reference to the above table with the label.
+
+\noindent
+This will show the number in Table \ref{tab:my-table}.
+\\
+
+\noindent
+A tilda can be use to show the number in the same line Table~\ref{tab:my-table}.
+
+\end{document}
+

@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\title{Graphics}
+\author{John Doe}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+Adding images.
+
+\subsection{Including graphics}
+A cat image.
+
+\includegraphics[width=3cm]{image/cat.jpg}
+
+\subsection{Float figure environment}
+Adding a float figure\ref{fig:dog}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=3cm]{image/dog.jpg}
+		\caption{This is a dog.}
+		\label{fig:dog}
+	\end{center}
+\end{figure}
+
+
+
+\end{document}
+

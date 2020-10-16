@@ -1,4 +1,4 @@
-# LaTeX templates
+# LaTeX templates and Notes
 ## Requirement
 
 - Docker Desktop

@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{{image/}}
+
+\usepackage{caption, subcaption}
+
+\title{Images}
+\author{Name}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Graphics}
+
+Both of my graphics are in the image directory for the subfigures, Figure~\ref{fig:dog} and Figure~\ref{fig:cat} in Figure~\ref{fig:subs}.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.8]{dog.jpg}
+		\caption{My dog}
+		\label{fig:dog}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.8]{cat.jpg}
+		\caption{My cat}
+		\label{fig:cat}
+	\end{subfigure}
+	\caption{My pets}
+	\label{fig:subs}
+\end{figure}
+
+
+\end{document}
+

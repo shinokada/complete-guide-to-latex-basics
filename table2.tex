@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+
+\title{Tables}
+\author{John Doe}
+\date{}
+
+\begin{document}
+\maketitle
+\section{More on Tables}
+
+The multirow package creates tabular cells spanning multiple rows.
+
+Table~\ref{tab:wrapping} uses text wrapping inn the last column.
+
+\subsection{Use p{3cm} to limit the width}
+
+\begin{table}[ht]
+	\caption{Text Wrapping} 
+	\begin{center}
+		\begin{tabular}{| l | l | p{3cm}|}
+			\hline
+			CS101 & Java      & Programming with Java                            \\
+			CS201 & Languages & Programming language principles                  \\
+			CS301 & Compilers & Principles of compiler design and implimentation \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{tab:wrapping}
+\end{table}
+
+\subsection{Using the multirow package}
+
+Table~\ref{tab:multi} uses row and column span.
+
+\begin{table}[ht]
+	\caption{Spanning rows and columns}
+	\begin{center}
+		\begin{tabular}{| l | c | c|}
+			\hline
+			& \multicolumn{2}{c|}{Ranges} \\
+			                      & X & Y \\
+			\hline
+			\multirow{3}{*}{Hot}  & 7 & 9 \\
+			                      & 5 & 8 \\
+			                      & 6 & 7 \\
+			\hline
+			\multirow{3}{*}{Cold} & 4 & 7 \\
+			                      & 2 & 9 \\
+			                      & 3 & 5 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{tab:multi}
+\end{table}
+
+\end{document}
+

@@ -1,0 +1,76 @@
+\documentclass{proc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+
+\title{More Lists}
+\author{Name}
+\date{}
+
+\begin{document}
+\maketitle
+\section{List 2}
+
+\subsection{Using enumitem package}
+
+Use package enumitem.
+
+\begin{enumerate}
+	\item One
+	\item Two
+	\item Three
+\end{enumerate}
+
+\subsection{Continuing the list}
+
+Use resume.
+
+\begin{enumerate}[resume]
+	\item Four
+	\item Five
+	\item Six
+\end{enumerate}
+
+\subsection{Without package}
+
+Use setcounter.
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	\item Seven
+	\item Eight
+\end{enumerate}
+
+\subsection{Using Letter}
+
+User renewcommand to change from number to alphabets.
+
+
+\renewcommand{\theenumi}{\Alph{enumi}}
+\begin{enumerate}
+	\item One
+	\item Two
+	\item Three
+\end{enumerate}
+
+\subsection{Bullet list}
+
+\begin{itemize}
+	\item One
+	\item Two
+	\item Three
+\end{itemize}
+
+\subsection{Using right arrow symbol}
+
+Use recommand to change from labelitemi to math right arrow.
+
+\renewcommand{\labelitemi}{$\rightarrow$}
+\begin{itemize}
+	\item One
+	\item Two
+	\item Three
+\end{itemize}
+
+
+\end{document}

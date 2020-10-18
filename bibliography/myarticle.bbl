@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{black2013}
+Jack Black.
+\newblock Latex.
+\newblock http://www.latex-project.org/, 2013.
+
+\bibitem{bond2019}
+James Bond.
+\newblock {\em Black holes}.
+\newblock Famous Pub, 2019.
+
+\bibitem{doe2020}
+John Doe, Jane Doe, and James Doe.
+\newblock Magic article.
+\newblock {\em Agriculture}, 123(22):102--102, 2020.
+
+\end{thebibliography}

@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{algpseudocodex}
+
+\title{Algorithms}
+\author{Name}
+\date{}
+
+\begin{document}
+\maketitle
+\section{Algorithm 1}
+
+
+
+\begin{algorithmic}
+	\Require $n \geq 0$
+	\Ensure $y = x^n$
+	\State $y \Leftarrow 1$
+	\State $X \Leftarrow x$
+	\State $N \Leftarrow n$
+	\While{$N \neq 0$}
+	\If{$N$ is even}
+	\State $X \Leftarrow X \times X$
+	\State $N \Leftarrow \frac{N}{2} $  \Comment{This is a comment}
+	\ElsIf{$N$ is odd}
+	\State $y \Leftarrow y \times X$
+	\State $N \Leftarrow N - 1$
+	\EndIf
+	\EndWhile
+\end{algorithmic}
+
+\end{document}
+

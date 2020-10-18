@@ -11,24 +11,15 @@
 
 \begin{document}
 % \maketitle
-\section{Font & Font family}
+\section{Font Style in \LaTeX}
 
-
-\subsection{Text Formatting}
-
-\includegraphics[scale=0.5]{image/commands.png}
-
-{\sffamily
-	Text is sans-serif. Text can be {\em emphasized}.
-}
-
-Normal text, {\sffamily sans serif text {\bfseries and bold}}.
+Normal style.
 
 \textbf{Bold formatting}
 
-{\bfseries Text to bold}
+{\bfseries Text to bold using bfseries}
 
-\bfseries Text to bold \mdseries
+\bfseries Text to bold another way to use bfseries \mdseries
 
 \emph{Italics formatting}
 
@@ -36,43 +27,42 @@ Normal text, {\sffamily sans serif text {\bfseries and bold}}.
 
 \textsl{slanted}
 
-\textsc{Small Caps}
+\textsc{Small Capitals}
+
+\uppercase{Uppercase}
+
+\textmd{Normal font weight}
 
 % can be nested
 \textit{\textbf{nested}}
 
 \underline{Underline formatting}
 
-\subsection{Paragraph formatting}
-
-New paragraph are automatically indented.
-
-\noindent But you can use noindent.
-
-\section{Oddities}
-
-Direction of single and double quotes.
-
-\subsection{Misquoting}
-
-Using 'single' and "double" quoting.
-\\
-
-\noindent But you can use a backtick, `single quote' and ``double quote".
-
-
-\section{Fonts}
-
+\section{Font families}
 % Use this for source codes
-\texttt{typewriter font}
+\texttt{Text in typewriter font family.}
 
-\textsf{sans-serif}
+\ttfamily{Using ttfamily for typewriter font family.}
 
-section{\textsf{\LaTeX\ resources on the internet}}
+\textsf{Text in sans-serif font.}
+
+\sffamily{Using sffamily for sans-serif font family.}
 
 \textrm{Roman fonts}
 
+\section{Command and declaration}
 
+\includegraphics[scale=0.5]{image/commands.png}
+
+{\sffamily
+	Text is sans-serif. Text can be {\em emphasized}.
+}
+
+{\fontfamily{qcs}\selectfont
+	This text uses a different font typeface
+}
+
+Normal text, {\sffamily sans serif text {\bfseries and bold}}.
 
 \section{Indent}
 
